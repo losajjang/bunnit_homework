@@ -5,11 +5,11 @@ import {Home, Calendar, Library, MyPage} from './src/pages/index';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 Ionicons.loadFont();
 
-export type LoggedInParamList = {
+export type pageType = {
   Home: undefined;
-  Settings: undefined;
-  Delivery: undefined;
-  Complete: {orderId: string};
+  Calendar: undefined;
+  Library: undefined;
+  MyPage: undefined;
 };
 
 const Tab = createBottomTabNavigator();
