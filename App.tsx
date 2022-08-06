@@ -17,26 +17,7 @@ const Stack = createNativeStackNavigator();
 function App() {
   return (
     <NavigationContainer>
-      <Tab.Navigator>
-        <Tab.Screen name="home" component={Home} options={{title: 'HOME'}} />
-        <Tab.Screen
-          name="calendar"
-          component={Calendar}
-          options={{
-            title: 'CALENDAR',
-          }}
-        />
-        <Tab.Screen
-          name="library"
-          component={Library}
-          options={{title: 'LIBRARY'}}
-        />
-        <Tab.Screen
-          name="myPage"
-          component={MyPage}
-          options={{title: 'MY PAGE'}}
-        />
-      </Tab.Navigator>
+      
     </NavigationContainer>
   );
 }
