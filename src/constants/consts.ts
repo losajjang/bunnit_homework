@@ -1,3 +1,4 @@
+// 상수로 사용될 월명, 요일명, 각 달의 마지막일자F
 export const months = [
   'January',
   'February',
