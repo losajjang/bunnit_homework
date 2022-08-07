@@ -19,7 +19,7 @@ const Tab = createBottomTabNavigator();
 function App() {
   return (
     <NavigationContainer>
-      <Tab.Navigator>
+      <Tab.Navigator initialRouteName="home">
         <Tab.Screen
           name="home"
           component={Home}
