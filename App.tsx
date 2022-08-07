@@ -5,15 +5,17 @@ import {Home, Calendar, Library, MyPage} from './src/pages/index';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 Ionicons.loadFont();
 
-export type LoggedInParamList = {
+export type pageType = {
   Home: undefined;
-  Settings: undefined;
-  Delivery: undefined;
-  Complete: {orderId: string};
+  Calendar: undefined;
+  Library: undefined;
+  MyPage: undefined;
 };
 
 const Tab = createBottomTabNavigator();
 
+// 현재 네비게이팅 중인 페이지는 삼항연산자를 이용해 아이콘모양과 크기를 변경하여
+// 어떤 페이지에 있는지 확인 할 수 있게 함.
 function App() {
   return (
     <NavigationContainer>
